@@ -1,0 +1,10 @@
+<app-greeting [message]="homeMessage()" />  
+<app-counter />
+<div>
+    <label>Key Up Event</label> 
+    <input type="text" (keyup)="handleKeyUp($event)" />
+</div>
+<div style="margin-top: 20px">
+    <label>Change Event</label> 
+    <input type="text" (change)="handleInputChange($event)" />
+</div>

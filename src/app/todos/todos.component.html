@@ -1,0 +1,7 @@
+<h3>Todos List!</h3>
+
+<mat-selection-list #todoItems()>
+@for (todo of todoItems(); track todo.id) {
+    <mat-list-option [selected]="todo.completed">{{ todo.title }}</mat-list-option>
+}
+</mat-selection-list>
