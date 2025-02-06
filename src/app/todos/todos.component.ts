@@ -3,12 +3,13 @@ import { TodosService } from '../services/todos.service';
 import { Todo } from '../model/todo.type';
 import { catchError } from 'rxjs';
 
-import {MatListModule} from '@angular/material/list';
+import { MatListModule } from '@angular/material/list';
+import { TodoItemComponent } from '../components/todo-item/todo-item.component';
 
 @Component({
   selector: 'app-todos',
   standalone: true,
-  imports: [MatListModule],
+  imports: [MatListModule, TodoItemComponent],
   templateUrl: './todos.component.html',
   styleUrl: './todos.component.scss'
 })
